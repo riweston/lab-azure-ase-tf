@@ -12,4 +12,10 @@ resource "azurerm_template_deployment" "main" {
   }
 
   deployment_mode = "Incremental"
+
+  // Required to delete ARM template
+  provisioner "local-exec" {
+    when    = "destroy"
+    command = "az resource delete --ids ${self.outputs.app_service_evironment_id}"
+  }
 }

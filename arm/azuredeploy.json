@@ -32,5 +32,11 @@
             },
             "tags": null
         }
-    ]
+    ],
+    "outputs": {
+        "app_service_evironment_id": {
+            "type": "string",
+            "value": "[resourceId('Microsoft.Web/hostingEnvironments', parameters('aseName'))]"
+        }
+    }
 }
