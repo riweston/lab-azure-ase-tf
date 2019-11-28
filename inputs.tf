@@ -1,54 +1,54 @@
 variable "location" {
-  type    = "string"
   default = "UK West"
+  type    = "string"
 }
 
 variable "subscriptionId" {
-  type    = "string"
   default = "f351ddd1-6c1d-4cd4-8b0f-d596376f90d5"
+  type    = "string"
 }
 
 variable "subnetName" {
-  type    = "string"
   default = "SN-ase"
+  type    = "string"
 }
 
 variable "vnetName" {
-  type    = "string"
   default = "VNET-ase"
+  type    = "string"
 }
 
 variable "vnetId" {
-  type    = "string"
   default = "/subscriptions/f351ddd1-6c1d-4cd4-8b0f-d596376f90d5/resourceGroups/RG-ase-lab-arm/providers/Microsoft.Network/virtualNetworks/VNET-ase"
+  type    = "string"
 }
 
 variable "VNetResourceGroupName" {
-  type    = "string"
   default = "RG-ase-lab-arm"
+  type    = "string"
 }
 
 variable "subnetRouteTableName" {
-  type    = "string"
   default = "ase-lab-arm-Route-Table"
+  type    = "string"
 }
 
 variable "subnetNSGName" {
-  type    = "string"
   default = "ase-lab-arm-NSG"
+  type    = "string"
 }
 
 variable "subnetId" {
-  type    = "string"
   default = "/subscriptions/f351ddd1-6c1d-4cd4-8b0f-d596376f90d5/resourceGroups/RG-ase-lab-arm/providers/Microsoft.Network/virtualNetworks/VNET-ase/subnets/SN-ase"
+  type    = "string"
 }
 
 variable "vnetAddress" {
-  type    = "string"
   default = "192.168.250.0/23"
+  type    = "string"
 }
 
 variable "subnetAddress" {
-  type    = "string"
   default = "192.168.250.0/28"
+  type    = "string"
 }
