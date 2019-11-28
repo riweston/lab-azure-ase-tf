@@ -5,19 +5,10 @@ resource "azurerm_template_deployment" "main" {
   template_body = "${file("arm/azuredeploy.json")}"
 
   parameters = {
-    "location"              = "${var.location}"
-    "aseName"               = "${var.aseName}"
-    "subscriptionId"        = "${var.subscriptionId}"
-    "vnetName"              = "${var.vnetName}"
-    "subnetName"            = "${var.subnetName}"
-    "vnetId"                = "${var.vnetId}"
-    "VNetResourceGroupName" = "${var.VNetResourceGroupName}"
-    "vnetAddress"           = "${var.vnetAddress}"
-    "subnetAddress"         = "${var.subnetAddress}"
-    "subnetRouteTableName"  = "${var.subnetRouteTableName}"
-    "subnetNSGName"         = "${var.subnetNSGName}"
-    "ilbMode"               = "${var.ilbMode}"
-    "subnetId"              = "${var.subnetId}"
+    "aseName"  = "${var.aseName}"
+    "location" = "${var.location}"
+    "ilbMode"  = "${var.ilbMode}"
+    "subnetId" = "${var.subnetId}"
   }
 
   deployment_mode = "Incremental"
