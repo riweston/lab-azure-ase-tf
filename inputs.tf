@@ -1,54 +1,51 @@
 variable "location" {
   default = "UK West"
-  type    = "string"
+}
+
+variable "aseName" {
+  default = "appservice-tf"
 }
 
 variable "subscriptionId" {
   default = "f351ddd1-6c1d-4cd4-8b0f-d596376f90d5"
-  type    = "string"
-}
-
-variable "subnetName" {
-  default = "SN-ase"
-  type    = "string"
 }
 
 variable "vnetName" {
-  default = "VNET-ase"
-  type    = "string"
+  default = "VNET-ase-lab-tf"
+}
+
+variable "subnetName" {
+  default = "SNET-ase-lab-tf"
 }
 
 variable "vnetId" {
-  default = "/subscriptions/f351ddd1-6c1d-4cd4-8b0f-d596376f90d5/resourceGroups/RG-ase-lab-arm/providers/Microsoft.Network/virtualNetworks/VNET-ase"
-  type    = "string"
+  default = "/subscriptions/f351ddd1-6c1d-4cd4-8b0f-d596376f90d5/resourceGroups/RG-ase-lab-tf/providers/Microsoft.Network/virtualNetworks/VNET-ase-lab-tf"
 }
 
 variable "VNetResourceGroupName" {
-  default = "RG-ase-lab-arm"
-  type    = "string"
-}
-
-variable "subnetRouteTableName" {
-  default = "ase-lab-arm-Route-Table"
-  type    = "string"
-}
-
-variable "subnetNSGName" {
-  default = "ase-lab-arm-NSG"
-  type    = "string"
-}
-
-variable "subnetId" {
-  default = "/subscriptions/f351ddd1-6c1d-4cd4-8b0f-d596376f90d5/resourceGroups/RG-ase-lab-arm/providers/Microsoft.Network/virtualNetworks/VNET-ase/subnets/SN-ase"
-  type    = "string"
+  default = "RG-ase-lab-tf"
 }
 
 variable "vnetAddress" {
-  default = "192.168.250.0/23"
-  type    = "string"
+  default = "10.0.0.0/24"
 }
 
 variable "subnetAddress" {
-  default = "192.168.250.0/28"
-  type    = "string"
+  default = "10.0.0.0/24"
+}
+
+variable "subnetRouteTableName" {
+  default = "appservice-tf-Route-Table"
+}
+
+variable "subnetNSGName" {
+  default = "appservice-tf-NSG"
+}
+
+variable "ilbMode" {
+  default = 0
+}
+
+variable "subnetId" {
+  default = "/subscriptions/f351ddd1-6c1d-4cd4-8b0f-d596376f90d5/resourceGroups/RG-ase-lab-tf/providers/Microsoft.Network/virtualNetworks/VNET-ase-lab-tf/subnets/SNET-ase-lab-tf"
 }
