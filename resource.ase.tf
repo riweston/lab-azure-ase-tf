@@ -8,7 +8,7 @@ resource "azurerm_template_deployment" "main" {
     "aseName"  = "${var.aseName}"
     "location" = "${var.location}"
     "ilbMode"  = "${var.ilbMode}"
-    "subnetId" = "${var.subnetId}"
+    "subnetId" = "${azurerm_subnet.main.id}"
   }
 
   deployment_mode = "Incremental"
