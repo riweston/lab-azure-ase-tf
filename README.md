@@ -7,7 +7,8 @@ Lab PoC for Azure App Service Environment deployed as an ARM template wrapped in
 ## Gotchas
 
 - Watch out for integers in the ARM template, Terraform can only pass strings so they should be converted by the ARM template
-  <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Inputs
 
