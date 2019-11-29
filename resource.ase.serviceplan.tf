@@ -6,7 +6,8 @@ resource "azurerm_app_service_plan" "s_S1" {
   app_service_environment_id = "${azurerm_template_deployment.main.outputs["app_service_evironment_id"]}"
 
   sku {
-    tier = "Standard"
-    size = "S1"
+    tier     = "Isolated"
+    size     = "I1"
+    capacity = 1
   }
 }
