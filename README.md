@@ -14,8 +14,8 @@ Lab PoC for Azure App Service Environment deployed as an ARM template wrapped in
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| aseName |  | string | `"appservice-tf"` | no |
-| ilbMode |  | string | `"0"` | no |
-| location |  | string | `"UK West"` | no |
+| aseName | Name of the Azure ASE instance | string | `"appservice-tf"` | no |
+| ilbMode | Public (0) or Private (1) ASE instance | string | `"0"` | no |
+| location | Azure Region | string | `"UK West"` | no |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
